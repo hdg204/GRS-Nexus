@@ -1,3 +1,5 @@
+*Dr. Harry Green, University of Exeter*
+
 # GRS-Nexus
 
 ## Installation and Background
