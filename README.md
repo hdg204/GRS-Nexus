@@ -25,6 +25,14 @@ Without the info scores, the function takes about 3-5 minutes on default DNA Nex
 
 These must be tab separated in the order chr, bp, other, effect, weight, where 'other' and 'effect' represent the reference and trait-raising alleles respectively.
 
+## Technical Details
+
+The script identifies base pair position matching the correct chromosome, uses bgenix to pull those out of the bgen file and qctool to output a bgen file. For each chromosome with SNPs that are found, a plink command merges the bgens into a plink binary file. Plink2 is used to rename the IDs so it can match the input file, and plink is used to create the score. The exact command that handles the calculation is
+
+`./plink --bfile merged_dataset_2 --score plink_score 1 2 3 --out score`
+
+Where plink_score is a file created earlier in step 2. The  output file is score, which is saved in `score.profile` then immediately read back into R.
+
 ## Licence
 
 If any of the contained code is used in any academic article, please acknowledge the authors (Harry Green and Bethan Rimmer) include a link to this github repository in the acknowledgements section, and please make any other code used in your article open source.
