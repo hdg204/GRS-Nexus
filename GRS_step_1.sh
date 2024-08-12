@@ -9,8 +9,6 @@ curl -s https://s3.amazonaws.com/plink2-assets/ > plinkweb
 grep -oP 'plink2_linux_x86_64_\d{8}.zip' plinkweb | sort | tail -n 1 > plinkfile
 curl -o plink2.zip $(paste -d "" <(echo -n "https://s3.amazonaws.com/plink2-assets/") plinkfile)
 
-curl https://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_20240806.zip > herpderp
-
 tar -xvzf bgen.tgz
 tar -xvzf qctool.tgz
 unzip -o plink.zip
