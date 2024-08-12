@@ -36,3 +36,7 @@ Where plink_score is a file created earlier in step 2. The  output file is score
 ## Licence
 
 If any of the contained code is used in any academic article, please acknowledge the authors (Harry Green and Bethan Rimmer) include a link to this github repository in the acknowledgements section, and please make any other code used in your article open source.
+
+## Known Issues
+
+There is no cleanup of intermediate files. If you run a GRS without all the chromosomes it will scoop up any files left behind for the info file. This doesn't affect the score.
