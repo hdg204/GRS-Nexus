@@ -17,7 +17,7 @@ generate_grs has one mandatory input, the GRS SNP file, and one optional input f
 
 If you simply want the GRS score output, run `GRS=generate_grs('Example_GRS',info=F)` as an example. This will create a file with the IDS, allele counts and genetic risk scores.
 
-If you also want the info score and maf for each SNP (recommended) run `GRS=Generate_GRS('Example_GRS')`
+If you also want the info score and maf for each SNP (recommended) run `GRS=generate_grs('Example_GRS')`
 
 Without the info scores, the function takes about 3-5 minutes on default DNA Nexus settings. It might seem like it's frozen sometimes - do not touch R Studio while the function is running. With the info scores, it can take up to 10 minutes but seems quite inconsistent in speed.
 
