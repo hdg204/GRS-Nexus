@@ -35,9 +35,9 @@ The script identifies base pair position matching the correct chromosome, uses b
 
 Where plink_score is a file created earlier in step 2. The  output file is score, which is saved in `score.profile` then immediately read back into R.
 
-## Licence
+## Terms of Use
 
-If any of the contained code is used in any academic article, please acknowledge the authors (Harry Green and Bethan Rimmer) include a link to this github repository in the acknowledgements section, and please make any other code used in your article open source.
+If any of the contained code is used in any academic article, please acknowledge the authors (Harry Green and Bethan Mallabar-Rimmer) include a link to this github repository in the acknowledgements section, and please make **ALL** other code used in your article open source.
 
 ## Known Issues
 
