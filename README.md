@@ -1,5 +1,7 @@
 *Dr. Harry Green, University of Exeter*
 
+***PLINK FILES MOVING AROUND HAS BROKEN THIS SCRIPT. FIX COMING TOMORROW***
+
 # GRS-Nexus
 
 ## Installation and Background
