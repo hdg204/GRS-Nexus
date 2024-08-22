@@ -24,6 +24,14 @@ generate_grs=function(infile,info=T){
   system(paste0("awk '{print $0, ",23,"}' infotemp >> info"))
   info=read.csv('info',sep='',header=F)
   info=info%>%rename(ID=V1,rsid=V2,MAF=V6,info=V8)%>%select(ID,rsid,MAF,info)
+
+  system('rm chr*.bim')
+  system('rm chr*.fam')
+  system('rm chr*.bed')
+  system('rm bp*')
+  system('rm ids*')
+  system('rm merged_dataset*')
+    
   return(list(score=as.data.frame(score),info=as.data.frame(info)))
   }else{
     return(score)
