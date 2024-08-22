@@ -51,3 +51,12 @@ awk 'NR>2 {print $1, $1, 0, 0, 0, 0}' "/mnt/project/Bulk/Imputation/UKB imputati
 ./plink2 --bfile merged_dataset --set-all-var-ids @_# --make-bed --out merged_dataset_2
 awk 'NR>1 {print $1"_"$2,$4,$5}' $1 > plink_score
 ./plink --bfile merged_dataset_2 --score plink_score 1 2 3 --out score
+
+
+rm chr*.bim
+rm chr*.fam
+rm chr*.bed
+rm bp*
+rm ids*
+rm merged_dataset*
+    
