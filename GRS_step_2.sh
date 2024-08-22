@@ -58,5 +58,4 @@ rm chr*.fam
 rm chr*.bed
 rm bp*
 rm ids*
-rm merged_dataset*
     
